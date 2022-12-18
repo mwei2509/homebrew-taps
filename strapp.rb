@@ -5,11 +5,11 @@
 class Strapp < Formula
   desc ""
   homepage "https://github.com/mwei2509/strapp"
-  version "1.10.0"
+  version "1.11.0"
 
   on_macos do
-    url "https://github.com/mwei2509/strapp/releases/download/v1.10.0/strapp_1.10.0_darwin_all.tar.gz"
-    sha256 "6682ef7619a031923201ceb031c9d09626d9a21e5c64815717582e3b84b7812c"
+    url "https://github.com/mwei2509/strapp/releases/download/v1.11.0/strapp_1.11.0_darwin_all.tar.gz"
+    sha256 "2552859572aa4b4dff155d61e87f0cc948741b7234869b16000bd3200d8d3a0c"
 
     def install
       bin.install "strapp"
@@ -18,16 +18,16 @@ class Strapp < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mwei2509/strapp/releases/download/v1.10.0/strapp_1.10.0_linux_arm64.tar.gz"
-      sha256 "75b604ee0eb11b9446566007303e36b3d21373c3a316858b0b7ae7f73f88b401"
+      url "https://github.com/mwei2509/strapp/releases/download/v1.11.0/strapp_1.11.0_linux_arm64.tar.gz"
+      sha256 "6944aa0f7be0fab4ffd66efbf9132cfa3770d7ebf9356be5df478e488fe17c20"
 
       def install
         bin.install "strapp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mwei2509/strapp/releases/download/v1.10.0/strapp_1.10.0_linux_amd64.tar.gz"
-      sha256 "ab1a4841df902541a3b293b1161bbfb04e5ccf587a10dbeaa2c66402788d9b7a"
+      url "https://github.com/mwei2509/strapp/releases/download/v1.11.0/strapp_1.11.0_linux_amd64.tar.gz"
+      sha256 "4209fcf791b2467bfc5ed4d231726780cc63af1fdeb8bba000b0424df4443f9b"
 
       def install
         bin.install "strapp"
